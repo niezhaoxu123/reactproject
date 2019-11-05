@@ -14,23 +14,11 @@ class Admin extends React.Component{
                     <div className="logo" />
 
                     <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
-                        <CustomSlider></CustomSlider>
-                        {/*<Menu.Item key="1">*/}
-                        {/*<Icon type="user" />*/}
-                        {/*<span className="nav-text">nav 1</span>*/}
-                    {/*</Menu.Item>*/}
-                        {/*<Menu.Item key="1">*/}
-                            {/*<Icon type="user" />*/}
-                            {/*<span className="nav-text">nav 1</span>*/}
-                        {/*</Menu.Item>*/}
-                        {/*<Menu.Item key="1">*/}
-                            {/*<Icon type="user" />*/}
-                            {/*<span className="nav-text">nav 1</span>*/}
-                        {/*</Menu.Item>*/}
+                    <CustomSlider></CustomSlider>
                     </Menu>
                 </Sider>
-                <Layout  marginTop='20'>
-                    <Header style={{ background: '#fff'}} />
+                <Layout>
+                    <Header style={{ background: '#fff',textAlign: 'center' }} >人事管理系统</Header>
                     <Content style={{ margin: '24px 16px 0' }}>
                         <div style={{ padding: 24, background: '#fff', minHeight: 400 }}>
                             content
