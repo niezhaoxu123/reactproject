@@ -18,24 +18,23 @@ class Router extends React.Component{
         return(
             <HashRouter>
                 <Switch>
-<<<<<<< HEAD
                     <Redirect exact from='/' to='/login'></Redirect>
                     <Route path='/login' component={Login}></Route>
                     <Route path='/admin' component={()=>{
                        return(
                            <Admin>
-=======
-                    <Redirect exact from='/' to='/admin'></Redirect>
-                    <Route path='/admin' component={()=>{
-                       return(
-                           <Admin>
-                               {/*<Route path='/admin/home' component={Home}/>*/}
->>>>>>> 2d5244b6db7dbcfdf92eca090b0de4015ef149e0
-                               <Route path='/admin/home' component={Home}></Route>
-                           </Admin>
-                       )
-                    }}>
-                    </Route>
+                                <Redirect exact from='/' to='/admin'></Redirect>
+                                <Route path='/admin' component={()=>{
+                                return(
+                                    <Admin>
+                                        {/*<Route path='/admin/home' component={Home}/>*/}
+                                        <Route path='/admin/home' component={Home}></Route>
+                                    </Admin>
+                                )
+                                }}>
+                                </Route>
+                            </Admin>
+                       )}}></Route>
                 </Switch>
             </HashRouter>
         )
