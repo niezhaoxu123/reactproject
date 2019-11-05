@@ -31,8 +31,9 @@ class Router extends React.Component{
                                 }}>
                                 </Route>
                             </Admin>
-                       )}}></Route>
-                </Switch>
+                       )}}>
+                       </Route>
+                    </Switch>
             </HashRouter>
         )
     }
