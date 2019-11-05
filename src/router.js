@@ -4,11 +4,8 @@ import loadable from './utils/loadable'
 //不用懒加载得方式
 // import Nzx from './pages/nzx/nzx'
 //使用懒加载得方式
-
-
 // const Nzx=loadable(()=>import('./pages/nzx/nzx'))
 const Login=loadable(()=>import('./pages/login/login'))
-
 const Admin=loadable(()=>import('./pages/admin/admin'))
 const Home=loadable(()=>import('./pages/home/home'))
 
@@ -17,7 +14,6 @@ class Router extends React.Component{
         return(
             <HashRouter>
                 <Switch>
-
                     <Redirect exact from='/' to='/login'></Redirect>
                     <Route path='/login' component={Login}></Route>
                     <Route path='/admin' component={()=>{
