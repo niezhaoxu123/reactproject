@@ -9,32 +9,95 @@ class CustomSlider extends React.Component{
         this.state={
             nav:[
                 {
-        name:'首页',
-        path:'/admin/home',
-        key:'/admin/home'
-    },
-    {
+                  name:'首页',
+                  path:'/admin/home',
+                  key:'/admin/home'
+                },
+                {
         name:'用户管理',
         path:'/admin/user',
         key:'/admin/user',
+                    children:[
+                        {
+                            name:'用户查询',
+                            path:'/admin/user/userinfo',
+                            key:'/admin/user/userinfo'
+                        },
+                        {
+                            name:'添加用户',
+                            path:'/admin/user/adduser',
+                            key:'/admin/user/adduser',
+                        },
+                    ]
+    },
+    {
+        name:'部门管理',
+        path:'/admin/branch',
+        key:'/admin/branch',
         children:[
             {
-                name:'权限管理',
-                path:'/admin/user/root',
-                key:'/admin/user/root'
+                name:'部门查询',
+                path:'/admin/branch/branchinfo',
+                key:'/admin/branch/branchinfo'
             },
             {
-                name:'信息管理',
-                path:'/admin/user/info',
-                key:'/admin/user/info',
+                name:'添加部门',
+                path:'/admin/branch/addbranch',
+                key:'/admin/branch/addbranch',
             },
         ]
     },
-    {
-        name:'设置',
-        path:'/admin/setting',
-        key:'/admin/setting'
-    },
+                {
+                    name:'职位管理',
+                    path:'/admin/job',
+                    key:'/admin/job',
+                    children:[
+                        {
+                            name:'职位查询',
+                            path:'/admin/job/jobinfo',
+                            key:'/admin/job/jobinfo'
+                        },
+                        {
+                            name:'添加职位',
+                            path:'/admin/job/jobadd',
+                            key:'/admin/job/jobadd',
+                        },
+                    ]
+                },
+                {
+                    name:'员工管理',
+                    path:'/admin/employee',
+                    key:'/admin/employee',
+                    children:[
+                        {
+                            name:'员工查询',
+                            path:'/admin/employee/employeeinfo',
+                            key:'/admin/employee/employeeinfo'
+                        },
+                        {
+                            name:'员工添加',
+                            path:'/admin/employee/employeeadd',
+                            key:'/admin/employee/employeeadd',
+                        },
+                    ]
+                },
+                {
+                    name:'公告管理',
+                    path:'/admin/notice',
+                    key:'/admin/notice',
+                    children:[
+                        {
+                            name:'公告查询',
+                            path:'/admin/notice/noticeinfo',
+                            key:'/admin/notice/noticeinfo'
+                        },
+                        {
+                            name:'添加公告',
+                            path:'/admin/notice/noticeadd',
+                            key:'/admin/notice/noticeadd',
+                        },
+                    ]
+                },
             ]
         }
     }
