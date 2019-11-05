@@ -4,12 +4,9 @@ import loadable from './utils/loadable'
 //不用懒加载得方式
 // import Nzx from './pages/nzx/nzx'
 //使用懒加载得方式
-<<<<<<< HEAD
 
 // const Nzx=loadable(()=>import('./pages/nzx/nzx'))
 const Login=loadable(()=>import('./pages/login/login'))
-=======
->>>>>>> 2d5244b6db7dbcfdf92eca090b0de4015ef149e0
 const Admin=loadable(()=>import('./pages/admin/admin'))
 const Home=loadable(()=>import('./pages/home/home'))
 
