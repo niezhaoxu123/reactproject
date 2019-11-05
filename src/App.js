@@ -3,7 +3,7 @@ import Test from './pages/test'
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
+
       <header className="App-header">
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,9 +17,9 @@ function App() {
           Learn React
         </a>
       </header>
-=======
+
       <Test></Test>
->>>>>>> bashuaung
+
     </div>
   );
 }
