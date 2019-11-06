@@ -110,7 +110,7 @@ class CustomSlider extends React.Component{
           if(item.children){
               // 渲染次级
               return(
-                <SubMenu title={item.name}>
+                <SubMenu title={item.name}  key={item.key}>
                    {this.renderItem(item.children)}
                 </SubMenu>
               )
@@ -124,8 +124,7 @@ class CustomSlider extends React.Component{
         })
       }
     render(){
-        let {nav}=this.state
-        console.log(nav)
+        let {nav}=this.state;
         return(
             <div>     
             <Menu

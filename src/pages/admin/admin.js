@@ -21,7 +21,6 @@ class Admin extends React.Component{
                     <Header style={{ background: '#fff',textAlign: 'center' }} >人事管理系统</Header>
                     <Content style={{ margin: '24px 16px 0' }}>
                         <div style={{ padding: 24, background: '#fff', minHeight: 400 }}>
-                            content
                             {this.props.children}
                         </div>
                     </Content>
